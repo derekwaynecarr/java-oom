@@ -5,7 +5,7 @@ To build and use with a 64M heap size:
 
 ```sh
 $ mvn package
-$ java -server -Xms64M -Xmx64M -cp target/oomsimulator.java com.example.oom.Simulator
+$ java -server -Xms64M -Xmx64M -cp target/oomsimulator.jar com.example.oom.Simulator
 .......Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
         at java.util.Arrays.copyOf(Arrays.java:3332)
         at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
@@ -15,3 +15,4 @@ $ java -server -Xms64M -Xmx64M -cp target/oomsimulator.java com.example.oom.Simu
 ```
 
 The application is useful for testing memory consumption.
+
